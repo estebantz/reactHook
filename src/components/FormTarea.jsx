@@ -3,7 +3,7 @@ import { Lista } from "./Lista";
 
 export const FormTarea = () => {
   // aqui va nuestra logica
-  let tareasLocalStorage = JSON.parse(localStorage.getItem("tareasKey"));
+  let tareasLocalStorage = JSON.parse(localStorage.getItem("tareasKey")) || [];
 
   //crear un state
   const [tareas, setTareas] = useState(tareasLocalStorage);
